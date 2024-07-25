@@ -5,6 +5,5 @@ class Solution(object):
         print(r)
         if(r==x):
             return True
-        else:
-            return False
+        return False
         
