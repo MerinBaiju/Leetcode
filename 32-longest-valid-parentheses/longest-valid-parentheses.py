@@ -3,7 +3,6 @@ class Solution:
         o=0
         c=0
         a=0
-        
         for i in s:
             if i=='(' :
                 o+=1
@@ -26,11 +25,4 @@ class Solution:
                 c=0
             elif(c==o):
                 a=max(a,c*2)
-               
-            
-           
-
-        print(o)
-        print(c)
-        print(a)
         return a
