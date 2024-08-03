@@ -8,20 +8,18 @@ class Solution:
                 a+=1
                 l5+=1
             elif(i==10):
-               if(l5>=1):
-                a+=1
-                lt+=1
-                l5-=1
+                if(l5>=1):
+                    lt+=1
+                    l5-=1
+                else:
+                    return False
             else:
                 if(lt>=1 and l5>=1):
-                    a+=1
                     lt-=1
                     l5-=1
                 elif(l5>=3):
                     a+=1
                     l5-=3
-        if(a==len(bills)):
-            return True
-        else:
-            return False
-
+                else:
+                    return False
+        return True
