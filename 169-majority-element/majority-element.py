@@ -8,7 +8,11 @@ class Solution(object):
         for n in nums:
             if c==0:
                 res=n
-            c+=(1 if n==res else -1)
+                c+=1
+            elif n==res:
+                c+=1
+            else:
+                c-=1
         return res
             
         
